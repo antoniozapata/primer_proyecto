@@ -392,14 +392,7 @@ h1 {
 
 /*main*/
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-img {
+.item-slide img {
     max-width: 100%;
 }
 
@@ -407,10 +400,7 @@ img {
     position: relative;
     max-width: 1000px;
     width: 100%;
-    border-radius: 0.7rem;
-    overflow:hidden;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-.slide {
-    display: flex;
-}
