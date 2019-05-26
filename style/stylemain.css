@@ -389,3 +389,28 @@ h1 {
         margin-top: 40px;
     }
 }
+
+/*main*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor_imagenes-slide {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 0.7rem;
+    overflow:hidden;
+}
+
+.slide {
+    display: flex;
+}

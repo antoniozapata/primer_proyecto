@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="author" content="Antonio Zapata">
         <meta name="description" content="portafolio de empresa victoria, texy y antonio">
-        <link rel="shortcut icon" href="../resources/global-code.jpg" />
-        <link rel="stylesheet" type="text/css" href="../style/styleproducts.css">
+        <link rel="shortcut icon" href="../media/briefcase.png" />
+        <link rel="stylesheet" type="text/css" href="../style/stylecontact.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title>Global Code, S.L.</title>
     </head>
@@ -26,7 +26,7 @@
             </div>
             <div class="menu-wrap">
                 <input type="checkbox" class="toggler">
-                <img src="../resources/icon-menuh.png" alt="icon menu hamburger" class="hamburger">
+                <div class="hamburger"><div></div></div>
                 <div class="menu">
                     <div>
                         <div>
@@ -43,35 +43,30 @@
             </div>  
         </header>
     <main class="main">
-        <form action="">
+        <form action="" class="formulario">
             <h2>Contacto</h2>
-            <div>
-                <label for="nombre">Nombre:*</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            </div>
-            <div>
-                <label for="nombre">Primer Apellido:*</label>
-                <input type="text" name="nombre" id="primer_apellido" placeholder="Primer Apellido" required>
-            </div> 
-            <div>
-                <label for="nombre">Segundo Apellido:*</label>
-                <input type="text" name="nombre" id="segundo_apellido" placeholder="Segundo Apellido" required>
-            </div>
-            <div>
-                <label for="telefono">Teléfono:*</label>
-                <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
-            </div>
-            <div>
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" placeholder="email" required>
-            </div>  
-            <div>
-                <label for="comentario">Comentario:*</label>
-                <textarea id="comentario" name="comentario" placeholder="Comentario adicional" required></textarea>
-            </div>
-            <input type="button" value="Enviar" id=button>
-            <img src="../resources/imagen4contact.jpg" alt="fondo contact">
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="primer_apellido" placeholder="Primer Apellido" required>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="segundo_apellido" placeholder="Segundo Apellido" required>
+            <label for="telefono"></label>
+            <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="comentario"></label>
+            <textarea id="comentario" name="comentario" placeholder="Agregue aquí su comentario" required></textarea>
+            <input type="reset" value="Borrar todo" class="button">
+            <input type="button" value="Enviar" class=button>
+            <img src="../resources/fondo-contact.jpg" alt="fondo contact">
         </form>
+        <section>
+            <h3>Escríbenos</h3>
+            <p>Coloca tus datos y comentario y te atenderemos</p>
+            <p><strong>Dirección</strong><br>C/ de La Victoria 9, 1ª Planta 28012 <br>Madrid España</p>
+            <p><strong>Contactos</strong><br>móviles: +34 656 88 88 74<br>Correo electrónico:   info@global-code.com</p>
+        </section>
     </main>
     <footer class="footer">
         <div class="container-footer-all">
@@ -103,6 +98,12 @@
                                 <img src="../resources/rrss-contacts/instagram.png" alt="icon instagram">
                             </a>
                             <p>Siguenos en instagram</p>
+                        </li>
+                        <li class="list">
+                            <a href="https://www.youtube.com/?gl=ES&hl=es">
+                                <img src="../resources/rrss-contacts/youtube.png" alt="icon youtube">
+                            </a>
+                            <p>Siguenos en youtube</p>
                         </li>
                     </ul>
                 </div>

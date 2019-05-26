@@ -254,21 +254,18 @@ h1 {
         right: 0;
         z-index: 2;
         cursor: pointer;
-        width: 3.50rem;
-        height: 3.50rem;
+        width: 3.125rem;
+        height: 3.125rem;
         opacity: 0;
     }
     
-.hamburger {
-    width: 3.50rem;
-    height: 3.50rem;
-}
-
     .menu-wrap .hamburger {
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
+        width: 2.75rem;
+        height: 3.50rem;
         padding: 0.5rem;
         background: var(--primary-color);
         display: flex;
@@ -291,8 +288,8 @@ h1 {
         list-style-type: none;
     }
     
-    .menu-wrap .hamburger:before,
-    .menu-wrap .hamburger:after {
+    .menu-wrap .hamburger > div:before,
+    .menu-wrap .hamburger > div:after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -302,13 +299,22 @@ h1 {
         background: inherit;
     }
     
-    .menu-wrap .hamburger:after {
+    .menu-wrap .hamburger > div:after {
         top: 10px;
-    }  
- 
-    .menu-wrap .toggler:checked + .hamburger {
-        transform: rotate(360deg);
-        transition: 0.5s;
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div::before,
+    .menu-wrap .toggler:checked + .hamburger > div::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
     }
     
     .menu-wrap .toggler:checked ~ .menu {
@@ -393,19 +399,55 @@ h1 {
 
 /*Contacto*/
 
-main {
-
+.main {
+    display: flex;
 }
 
 form {
-    width: 28rem;
+    width: 22rem;
     margin: auto;
-    background: rgba(0,0,0,0.4);
-    padding: 0.5rem,1rem
+    background: rgba(0, 0, 0, 0.288);
+    padding: 0.5rem, 1rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    border-radius: 1rem;
 }
 
-.formulario {
-    display: flex;
-    align-items: center;
-    margin-left: 5rem;
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;  
 }
+
+input, textarea {
+    width: 94%;
+    margin-bottom: 1.5rem;
+    margin-left: 3%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 6rem;
+    max-height: 12rem;
+    max-width: 100%;
+}
+
+.button {
+    background: limegreen;
+    color: #fff;
+    padding: 1.2rem;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+@media (max-width 480px) {
+    form {
+        width: 100%
+    }
+}
+
