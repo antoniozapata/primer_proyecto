@@ -390,10 +390,17 @@ h1 {
     .colum3{
         margin-top: 40px;
     }
+
+    .main {
+        display: flex; /*contact*/
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
-/*Contacto*/
+/*Contact*/
 
 .main {
     max-width: 60rem;
@@ -413,7 +420,7 @@ h1 {
     border-radius: 1rem;
 }
 
-h2 {
+.titulo-contacto {
     color: #fff;
     text-align: center;
     margin: 0;
@@ -421,7 +428,7 @@ h2 {
     margin-bottom: 1.2rem;  
 }
 
-input, textarea {
+.campus {
     width: 94%;
     margin-bottom: 1.5rem;
     margin-left: 3%;
@@ -430,7 +437,7 @@ input, textarea {
     font-size: 1rem;
 }
 
-textarea {
+.textarea {
     min-height: 6rem;
     max-height: 12rem;
     max-width: 100%;
@@ -445,9 +452,4 @@ textarea {
     cursor: pointer;
 }
 
-@media (max-width 480px) {
-    form {
-        width: 100%
-    }
-}
 

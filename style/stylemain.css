@@ -51,6 +51,10 @@ h1 {
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
+    display: flex; /*Pertene al main*/
+    align-items: center; /*Pertenece al main*/
+    justify-content: center; /*Pertenece al main*/
+    padding: 2rem; /*Pertenece al main*/
 }
 
 .menu-wrap {
@@ -392,15 +396,47 @@ h1 {
 
 /*main*/
 
-.item-slide img {
+.imagenes-slide {
     max-width: 100%;
 }
 
 .contenedor_imagenes-slide {
-    position: relative;
     max-width: 1000px;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 10px; /*no se aplica*/
     overflow: hidden;
 }
 
+.slide {
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item {
+
+}
