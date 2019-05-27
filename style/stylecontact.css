@@ -118,7 +118,7 @@ h1 {
 .container-body {
     display: flex;
     justify-content: space-around;
-    height: 13rem;  
+    align-items: center;
 }
 
 .colum1 {
@@ -222,6 +222,7 @@ h1 {
 .colum2,
 .colum3 {
     height: 16rem;
+    margin-bottom: 0.3125; 
 }
 
 .footer h4 {
@@ -390,8 +391,14 @@ h1 {
     .colum3{
         margin-top: 40px;
     }
-}
 
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
 
 /*Contacto*/
 
@@ -444,10 +451,3 @@ textarea {
 .button:hover {
     cursor: pointer;
 }
-
-@media (max-width 480px) {
-    form {
-        width: 100%
-    }
-}
-
