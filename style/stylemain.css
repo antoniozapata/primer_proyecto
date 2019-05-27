@@ -55,6 +55,7 @@ h1 {
     align-items: center; /*Pertenece al main*/
     justify-content: center; /*Pertenece al main*/
     padding: 2rem; /*Pertenece al main*/
+    height: 100vh;
 }
 
 .menu-wrap {
@@ -412,7 +413,7 @@ h1 {
     transform: translate3d(0,0,0);
     transition: all 600ms;
     animation-name: autoplay;
-    animation-duration: 6.5s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -438,5 +439,86 @@ h1 {
 }
 
 .pagination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255,255,255, 0.5);
+    margin: 0, 10px;
+    text-align: center;
+    transition: all 300ms;
+}
 
+.pagination-item:hover {
+    transform: scale(2);
+}
+
+.pagination-item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    /*opacity: 0;*/
+    transition: all 600ms;/*eran 300ms*/
+}
+
+.pagination-item:hover img {
+    /*opacity: 1;*/
+    transform: scale(1);
+}
+
+input [id="1"]: :checked ~ .slide {
+    animation:none;
+    transform: trasladate3d(0,0,0);
+}
+
+input [id="1"]: :checked ~ .pagination .pagination-item [for="1"]{
+    background: #4e94ab;
+}
+
+input [id="2"]: :checked ~ .slide {
+    animation:none;
+    transform: trasladate3d(calc(-100%*1),0,0);
+}
+
+input [id="2"]: :checked ~ .pagination .pagination-item [for="2"]{
+    background: #4e94ab;
+}
+
+input [id="3"]: :checked ~ .slide {
+    animation:none;
+    transform: trasladate3d(calc(-100%*2),0,0);
+}
+
+input [id="3"]: :checked ~ .pagination .pagination-item [for="3"]{
+    background: #4e94ab;
+}
+
+input [id="4"]: :checked ~ .slide {
+    animation:none;
+    transform: trasladate3d(calc(-100%*3),0,0);
+}
+
+input [id="4"]: :checked ~ .pagination .pagination-item [for="4"]{
+    background: #4e94ab;
+}
+
+@keyframes autoplay{
+    25%{
+        transform: translate3d(calc(-100%*0),0,0);
+    }
+    50%{
+        transform: translate3d(calc(-100%*1),0,0);
+    }
+    75%{
+        transform: translate3d(calc(-100%*2),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100%*3),0,0);
+    }
 }
