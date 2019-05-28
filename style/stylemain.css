@@ -522,3 +522,4 @@ input [id="4"]: :checked ~ .pagination .pagination-item [for="4"]{
         transform: translate3d(calc(-100%*3),0,0);
     }
 }
+
