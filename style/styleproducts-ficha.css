@@ -376,21 +376,22 @@ h1 {
     .colum3{
         margin-top: 1.2rem;
     }
+
+    .botones {
+        flex-wrap: wrap;  
+    }   
 }
 
 /* ficha de productos */
 
 .main {
-    width: 800px;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
-    display: flex;
-
 }
 
 .section {
     margin: auto;
-    padding:
 }
 
 .botones {
@@ -430,7 +431,6 @@ h1 {
 
 .icon-descrpcion {
     float: left;
-    width: 
 }
 
 .icon-beneficios {
@@ -441,4 +441,9 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
+
+.container-info {
+}
+
+
 
