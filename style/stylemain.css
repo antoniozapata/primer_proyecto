@@ -18,6 +18,7 @@
     margin: 0;
 }
 
+/* barra de navegacion */
 .main-header {
     width: 100%;
     background: linear-gradient(to left, #4e94ab, #4e94ab 40%, white); 
@@ -58,6 +59,7 @@ h1 {
     height: 100vh;
 }
 
+/* menu hamburguesa */
 .menu-wrap {
     display: none;
 }
