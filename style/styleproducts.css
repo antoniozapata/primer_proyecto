@@ -376,6 +376,10 @@ h1 {
     .colum3{
         margin-top: 1.2rem;
     }
+
+    .galac_listadeprogramas {
+        flex-wrap: wrap;
+    }
 }
 
 /* productos */
@@ -391,6 +395,9 @@ h1 {
 .galac_listadeprogramas {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .container-ficha-sistema {
@@ -410,6 +417,7 @@ h1 {
     width: 15rem;
     height: 16.625rem;
     background: rgb(248, 248, 248);
+    margin: auto;
 }
 
 .boton-masinfo {
