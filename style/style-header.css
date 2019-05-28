@@ -1,0 +1,28 @@
+/* barra de navegacion */
+.main-header {
+    width: 100%;
+    background: linear-gradient(to left, #4e94ab, #4e94ab 40%, white); 
+    display: flex;
+    justify-content: space-between;
+    height: 4.65rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    padding: 0;
+    border: 0;
+    margin: 0; 
+}
+
+.img-logo, .img-logo-menu-wrap {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 4.5rem;
+    width: 16.5rem;
+    margin-left: 5rem;
+}
