@@ -16,9 +16,6 @@
     line-height: 1.4;
     top: 0;
     margin: 0;
-    background-image: url("../resources/fondo-contact.jpg");
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
 }
 
 .main-header {
@@ -67,7 +64,7 @@ h1 {
 }
 
 .main-menu li:hover {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu li a {
@@ -132,7 +129,6 @@ h1 {
 .colum1 p {
     font-size: 0.875rem;
     color: black;
-    margin: 0;
 }
 
 .colum2 {
@@ -174,7 +170,6 @@ h1 {
 
 .colum3 {
     max-width: 400px;
-    margin-right: 5rem;
 }
 
 .colum3 h1 {
@@ -222,7 +217,6 @@ h1 {
 .colum2,
 .colum3 {
     height: 16rem;
-    margin-bottom: 0.3125; 
 }
 
 .footer h4 {
@@ -251,18 +245,21 @@ h1 {
         right: 0;
         z-index: 2;
         cursor: pointer;
-        width: 3.125rem;
-        height: 3.125rem;
+        width: 3.50rem;
+        height: 3.50rem;
         opacity: 0;
     }
     
+    .hamburger {
+        width: 3.50rem;
+        height: 3.50rem;
+    }
+
     .menu-wrap .hamburger {
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
-        width: 2.75rem;
-        height: 3.50rem;
         padding: 0.5rem;
         background: var(--primary-color);
         display: flex;
@@ -285,8 +282,8 @@ h1 {
         list-style-type: none;
     }
     
-    .menu-wrap .hamburger > div:before,
-    .menu-wrap .hamburger > div:after {
+    .menu-wrap .hamburger:before,
+    .menu-wrap .hamburger:after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -296,22 +293,13 @@ h1 {
         background: inherit;
     }
     
-    .menu-wrap .hamburger > div:after {
+    .menu-wrap .hamburger:after {
         top: 10px;
-    }
-    
-    .menu-wrap .toggler:checked + .hamburger > div {
-        transform: rotate(135deg);
-    }
-    
-    .menu-wrap .toggler:checked + .hamburger > div::before,
-    .menu-wrap .toggler:checked + .hamburger > div::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    
-    .menu-wrap .toggler:checked:hover + .hamburger > div {
-        transform: rotate(225deg);
+    }  
+ 
+    .menu-wrap .toggler:checked + .hamburger {
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
     
     .menu-wrap .toggler:checked ~ .menu {
@@ -383,71 +371,74 @@ h1 {
         height: 100%;
     }
     
-    .colum1{
-        max-width: 100%;
-    }
-    
+    .colum1,
     .colum2,
     .colum3{
-        margin-top: 40px;
-    }
-
-    .main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        margin-top: 1.2rem;
     }
 }
 
-/*Contact*/
+/* ficha de productos */
 
 .main {
-    max-width: 60rem;
+    width: 800px;
     margin: auto;
-    padding: 0 3rem;
+    margin-top: 2rem;
     display: flex;
+
 }
 
-.formulario {
-    width: 22rem;
+.section {
     margin: auto;
-    background: rgba(0, 0, 0, 0.288);
-    padding: 0.5rem, 1rem;
-    box-sizing: border-box;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+    padding:
 }
 
-.titulo-contacto {
-    color: #fff;
-    text-align: center;
-    margin: 0;
+.botones {
+    display: flex;
+    margin: 1rem;
+    margin-left: 0;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.botones li {
+    list-style: none;
     font-size: 1.5rem;
-    margin-bottom: 1.2rem;  
-}
-
-.campus {
-    width: 94%;
-    margin-bottom: 1.5rem;
-    margin-left: 3%;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-.textarea {
-    min-height: 6rem;
-    max-height: 12rem;
-    max-width: 100%;
-}
-
-.button {
     background: #4e94ab;
-    color: #fff;
-    padding: 1.2rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 8px 15px -5px rgba(1, 1, 1, 1);
 }
-.button:hover {
+
+.botones li:hover {
     cursor: pointer;
+    -webkit-transform:scale(1.2); transform:scale(1.2);
 }
+
+.botones a {
+    text-decoration: none;
+    margin: 0;
+    margin-left: 0;
+    padding: 1rem;
+    color: #fff;
+}
+
+.icon-descrpcion {
+    float: left;
+    width: 
+}
+
+.icon-beneficios {
+    float: right;
+}
+
+.container-info p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
