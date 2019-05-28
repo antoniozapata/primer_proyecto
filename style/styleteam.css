@@ -105,6 +105,8 @@ h1 {
     float: right;
 }
 
+/* footer style */
+
 .footer {
     background:linear-gradient(to left, #4e94ab, #4e94ab 40%, white);
     color: black;

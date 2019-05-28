@@ -101,6 +101,8 @@ h1 {
     float: right;
 }
 
+/* footer style */
+
 .footer {
     background:linear-gradient(to left, #4e94ab, #4e94ab 40%, white);
     color: black;
@@ -118,7 +120,7 @@ h1 {
 .container-body {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    height: 13rem;  
 }
 
 .colum1 {
@@ -222,7 +224,6 @@ h1 {
 .colum2,
 .colum3 {
     height: 16rem;
-    margin-bottom: 0.3125; 
 }
 
 .footer h4 {

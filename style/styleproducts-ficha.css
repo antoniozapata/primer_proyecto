@@ -98,6 +98,8 @@ h1 {
     float: right;
 }
 
+/* footer style */
+
 .footer {
     background:linear-gradient(to left, #4e94ab, #4e94ab 40%, white);
     color: black;
@@ -115,7 +117,7 @@ h1 {
 .container-body {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    height: 13rem;  
 }
 
 .colum1 {
@@ -129,6 +131,7 @@ h1 {
 .colum1 p {
     font-size: 0.875rem;
     color: black;
+    margin: 0;
 }
 
 .colum2 {
@@ -170,6 +173,7 @@ h1 {
 
 .colum3 {
     max-width: 400px;
+    margin-right: 5rem;
 }
 
 .colum3 h1 {
