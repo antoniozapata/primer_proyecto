@@ -54,59 +54,6 @@ h1 {
     padding: 0 3rem;
 }
 
-/* menu hamburguesa */
-.menu-wrap {
-    display: none;
-}
-
-.main-menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.main-menu li {
-    border-right: 0.0625rem solid #fff;
-    height: 4.6rem;
-}
-
-.main-menu li:hover {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.main-menu li a {
-    display: block;
-    padding: 1rem;
-    color: #fff;
-    text-decoration: none;
-    align-items: center;
-}
-
-.titulo-programa {
-    font-size: 1.5rem;
-}
-
-.descripcion-admin {
-    width: 100%;
-    margin: auto;
-}
-
-.title3 {
-    font-size: 1rem;
-    color: #4e94ab;
-}
-
-.img-descripcion, 
-.img-caracteristicas {
-    float: left;
-}
-
-.img-beneficios {
-    float: right;
-}
-
 
 @media (max-width:768px) {
     .main-header {
