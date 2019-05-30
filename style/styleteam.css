@@ -18,7 +18,7 @@
     height: 100%;
     margin: auto;
     margin-bottom: 1rem;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 hr {
@@ -30,7 +30,7 @@ hr {
     border-radius: 1rem;
     margin: auto;
     margin-top: 1rem;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .imagen-perfil {
@@ -52,8 +52,6 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
 
 .container-inner-ficha {
     margin: auto;
