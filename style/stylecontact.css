@@ -38,6 +38,7 @@
     box-sizing: border-box;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-right: 2rem;
     border-radius: 1rem;
 }
 
@@ -73,6 +74,29 @@
     cursor: pointer;
 }
 
+.tituloh2 {
+    color: black;
+    font-size: 2rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+hr {
+    max-width: 60%;
+}
+
+.banner-contacto {
+    display: block;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    max-width: 70%;
+}
 
 @media (max-width:768px) {
     .main{

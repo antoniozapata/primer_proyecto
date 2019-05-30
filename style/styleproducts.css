@@ -9,7 +9,8 @@
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     top: 0;
-    margin: 0;
+    margin: auto;
+    background: #f5f5f5;
 }
 
 .main {
@@ -17,15 +18,15 @@
     height: 100%;
     margin: auto;
     margin-bottom: 1rem;
-
+    max-width: 70%;
 }
 
 .galac_listadeprogramas {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: auto;
+    max-width: 70%;
     flex-wrap: wrap;
 }
 
@@ -38,7 +39,7 @@
 
 .container-ficha-sistema:hover {
     cursor: pointer;
-    transform: translateX(-1rem);
+    filter: opacity(.5);
 }
 
 .container-img-sistema {
@@ -76,6 +77,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
 }
 
 .titulo-programa {
@@ -87,11 +91,6 @@
     margin: auto;
 }
 
-.title3 {
-    font-size: 1rem;
-    color: #4e94ab;
-}
-
 .img-descripcion, 
 .img-caracteristicas {
     float: left;
@@ -101,8 +100,17 @@
     float: right;
 }
 
-/* productos */
+hr {
+    max-width: 60%;
+}
 
+.banner-productos {
+    display: block;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    max-width: 70%;
+}
 
 @media (max-width:768px) {
     .galac_listadeprogramas {
