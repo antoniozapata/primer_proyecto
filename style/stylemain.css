@@ -27,18 +27,32 @@
 
 .parrafos-principales {
     margin-left: 5%;
-    margin-bottom: 0
+}
+
+.parrafos {
+    font-weight: 200%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.separacion {
+    margin-top: 1rem;
+}
+
+.espacio {
+    margin-bottom: 2rem;
 }
 
 .boton-principal {
     background: #4e94ab;
     border-radius: 5px;
     color: white;
+    font-size: 2rem;
     text-align: center;
-    border-left: 9px solid #4e94ab;
-    border-right: 9px solid #4e94ab;
-    border-bottom: 9px solid #4e94ab;
-    border-top: 5px solid #4e94ab;
+    border-left: 1rem solid #4e94ab;
+    border-right: 1rem solid #4e94ab;
+    border-bottom: 1rem solid #4e94ab;
+    border-top: 0.5rem solid #4e94ab;
 }
 
 .animation-left {
@@ -87,26 +101,19 @@ hr {
 }
 
 .titulos {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 200%;
-}
-
-.frase {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.primero {
-    margin-top: 1rem;
+    color: black;
+    font-size: 2rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
 }
 
 .titulos1 {
-    margin-left: 30%;
     font-weight: bold;
-}
-.titulos2 {
-    margin-left: 40%;
 }
 
 .aliados_negocio {
