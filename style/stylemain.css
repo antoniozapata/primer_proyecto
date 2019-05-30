@@ -1,229 +1,55 @@
-:root {
-    --primary-color: rgba(13, 110, 139,  0.75);
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
-}
-
-.html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    top: 0;
-}
-
-.body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-    top: 0;
-    margin: 0;
-}
-
-/* barra de navegacion */
-.main-header {
-    width: 100%;
-    background: linear-gradient(to left, #4e94ab, #4e94ab 40%, white); 
-    display: flex;
-    justify-content: space-between;
-    height: 4.65rem;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-}
-
-h1 {
-    padding: 0;
-    border: 0;
-    margin: 0; 
-}
-
-.img-logo, .img-logo-menu-wrap {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    height: 4.5rem;
-    width: 16.5rem;
-    margin-left: 5rem;
-}
-
-.main {
-    max-width: 60rem;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 3rem;
-}
-
-
-@media (max-width:768px) {
-    .main-header {
-        display: none;
-    }
-
-    .menu-wrap {
-        display: flex;
-        position: sticky;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        background: linear-gradient(to left, #4e94ab, #4e94ab 40%, white);  
-    }
-
-    .menu-wrap .toggler {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        cursor: pointer;
-        width: 3.50rem;
-        height: 3.50rem;
-        opacity: 0;
-    }
-    
-    .hamburger {
-    width: 3.50rem;
-    height: 3.50rem;
-}
-
-    .menu-wrap .hamburger {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        padding: 0.5rem;
-        background: var(--primary-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .menu-wrap .hamburger > div {
-        position: relative;
-        width: 100%;
-        height: 0.125rem;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.4s ease;
-    }
-    
-    .menu-list {
-        list-style-type: none;
-    }
-    
-    .menu-wrap .hamburger:before,
-    .menu-wrap .hamburger:after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: -10px;
-        width: 100%;
-        height: 2px;
-        background: inherit;
-    }
-    
-    .menu-wrap .hamburger:after {
-        top: 10px;
-    }  
- 
-    .menu-wrap .toggler:checked + .hamburger {
-        transform: rotate(360deg);
-        transition: 0.5s;
-    }
-    
-    .menu-wrap .toggler:checked ~ .menu {
-        visibility: visible;
-    }
-    
-    .menu-wrap .toggler:checked ~ .menu > div {
-        transform: scale(1);
-        transition-duration: var(--menu-speed);
-    }
-    
-    .menu-wrap .toggler:checked ~ .menu > div > div {
-        opacity: 1;
-        transition: opacity 0,4s ease;
-    }
-    
-    .menu-wrap .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        visibility: hidden;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .menu-wrap .menu > div {
-        background: var(--overlay-color);
-        border-radius: 50%;
-        width: 200vw;
-        height: 200vw;
-        display: flex;
-        flex: none;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease;
-    }
-    
-    .menu-wrap .menu > div > div {
-        text-align: center;
-        max-width: 90vw;
-        max-width: 100vh;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-    }
-    
-    .menu-wrap .menu > div > div > ul > li {
-        list-style: none;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-    
-    .menu-wrap .menu > div > div > ul > li > a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.4s ease;
-    }
-}
-
-/*main*/
 .pagina_presentacion {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .imagen-principal {
-    width:35rem;
-    height: 25rem;
+    width: 30rem;
+    height: 22rem;
+    animation-duration: 2s;
+    animation-name: animation-imagen-principal;
 }
 
 .parrafos-principales {
-    margin-left: 10%
+    margin-left: 5%;
+    margin-bottom: 0
+}
+
+.boton-principal {
+    background: #4e94ab;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border-left: 9px solid #4e94ab;
+    border-right: 9px solid #4e94ab;
+    border-bottom: 9px solid #4e94ab;
+    border-top: 5px solid #4e94ab;
+}
+
+.animation-left {
+    animation-duration: 2s;
+    animation-name: animation-left;
 }
 
 .imagen-central {
-    margin-left: 30%;
-    width: 30rem;
-    height: 30rem;
-    padding: 0;
-    
+    margin-left: 30%; 
 }
 
 .informacion_publicitaria {
-    display: flex
+    display: flex;
+    font-weight: bold;
+    padding: 1rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    /*flex-wrap: wrap;*/
 }
     
 .container_productos {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .container_productos img {
@@ -231,6 +57,7 @@ h1 {
     height: 8.3125rem;
     padding: 0;
     margin-bottom: 0.5rem;
+    margin-left: 1rem;
     margin-right: 1rem;
 }
 
@@ -241,22 +68,66 @@ h1 {
 }
 
 hr {
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .titulos {
-    margin-left: 45%
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial Black; 
+    font-weight: bold; 
+    /*font-size: 30px;*/ 
+    color: black; 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+.frase {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.primero {
+    margin-top: 1rem;
+}
+
+.titulos1 {
+    margin-left: 30%;
+    font-weight: bold;
+}
+.titulos2 {
+    margin-left: 40%;
 }
 
 .aliados_negocio {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .aliados_negocio img {
     padding: 1.5rem;
 }
+
+@keyframes animation-left {
+    0% {
+      transform: translateY(-2000px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes animation-imagen-principal {
+    0% {
+      transform: translateX(-2000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
 
 
 
