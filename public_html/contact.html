@@ -50,22 +50,22 @@
         <hr>
         <section class="main">
             <div>
-                <form action="mailto:antoniojosezapata@gmail.com" class="formulario">
+                <form action="mailto:antoniojosezapata@gmail.com" class="formulario" name="formulario">
                     <h2 class="titulo-contacto">Contacto</h2>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="campus">
                     <label for="nombre"></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="campus">
+                    <input type="text" name="nombre" id="primer_apellido" placeholder="Primer Apellido" class="campus">
                     <label for="nombre"></label>
-                    <input type="text" name="nombre" id="primer_apellido" placeholder="Primer Apellido" required class="campus">
+                    <input type="text" name="nombre" id="segundo_apellido" placeholder="Segundo Apellido" class="campus">
                     <label for="nombre"></label>
-                    <input type="text" name="nombre" id="segundo_apellido" placeholder="Segundo Apellido" required class="campus">
+                    <input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="campus">
                     <label for="telefono"></label>
-                    <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required class="campus">
+                    <input type="email" name="email" id="email" placeholder="Email" class="campus">
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Email" required class="campus">
+                    <textarea id="comentario" name="comentario" placeholder="Agregue aquí su comentario" class="campus textarea"></textarea>
                     <label for="comentario"></label>
-                    <textarea id="comentario" name="comentario" placeholder="Agregue aquí su comentario" required class="campus textarea"></textarea>
                     <input type="reset" value="Borrar todo" class="campus button">
-                    <input type="submit" value="Enviar" class="campus button">
+                    <input type="submit" value="Enviar" class="campus button" id="btn">
                 </form>
             </div>
             <section class="information">
@@ -132,4 +132,5 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/script.contact.js"></script>
 </body>
