@@ -18,7 +18,7 @@ const productsHome = [{
     productName:"Nomina Profesional"
 }];
 
-products.forEach((prod) => {
+productsHome.forEach((prod) => {
     const listProd = document.createElement("li");
 
     const imgProdHome = document.createElement("img");
