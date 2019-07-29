@@ -88,4 +88,4 @@ products.forEach((prod) => {
     productCode.innerHTML = prod.code;
     productName.innerHTML = prod.productName;
     moreInfo.innerHTML = "Más Información";
-})
+});
