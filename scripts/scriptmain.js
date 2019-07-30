@@ -38,30 +38,22 @@ productsHome.forEach((prod) => {
     productName.innerHTML = prod.productName;
 });
 
-const aliadoNegocio = [{
-    imgAli:"../resources/main/aliado_ccs.png",
-    nameAli: "Caracas"
-}, {
-    imgAli:"../resources/main/aliado_cdbolivar.jpg",
-    nameAli:"Ciudad Bolivar"
-}, {
-    imgAli:"../resources/main/aliado_miranda.png",
-    nameAli:"Miranda"
-}, {
-    imgAli:"../resources/main/aliado_lara.jpg",
-    nameAli: "Lara"
-}];
+const aliadoNegocio = [
+    "../resources/main/aliado_ccs.png",
+    "../resources/main/aliado_cdbolivar.jpg",
+    "../resources/main/aliado_miranda.png",
+    "../resources/main/aliado_lara.jpg",
+];
 
 aliadoNegocio.forEach((aliado) => {
     const listAliado = document.createElement("li");
 
     const imgAliado = document.createElement("img");
-    imgAliado.setAttribute("src", aliado.imgAli);
+    imgAliado.setAttribute("src", aliado);
     imgAliado.setAttribute("alt", "");
 
     const ulAli = document.querySelector(".aliados_negocio");
     ulAli.appendChild(listAliado);
 
     listAliado.appendChild(imgAliado);
-
 });

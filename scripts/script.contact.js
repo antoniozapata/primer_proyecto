@@ -5,45 +5,50 @@ const elementos = formulario.elements;
 const boton = document.getElementById ("btn");
 
 const validarNombre = function (e) {
-    if (formulario.nombre.value == 0) {
-        alert ("Completa el campo nombre");
-        e.preventDefault();
-    }
+    return formulario.nombre.value !== ""
+
+};
+
+const validarPrimerApellido = function (e) {
+    return formulario.primer_apellido.value !== ""
+
+};
+
+const validarSegundoApellido = function (e) {
+    return formulario.segundo_apellido.value !== ""
+
 };
 
 const validarTelefono = function (e) {
-    if (/^([9,7,6]{1})+([0-9]{8})$/ == true) {
-        validp.innerText = "válido"
-        else {
-        valido.innerText = "incorrecto";
-        alert ("Completa el campo Telefono");
-        e.preventDefault();
-    }
+    return formulario.telefono.value !== ""
 };
 
 const validarEmail = function (e) {
-    if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;.test(campo.value)) {
+    return formulario.email.value !== ""
+
+    /*if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(campo.value)) {
       valido.innerText = "válido";
     } else {
       valido.innerText = "incorrecto";
-      e.preventDefault();
-    }
+    }*/
 };
 
 const validarComentario = function (e) {
-    if (formulario.nombre.value == 0) {
-        alert ("Debes realizar un comentario");
-        e.preventDefault();
-    }
+    return formulario.comentario.value !== ""
 };
 
-const validar = function (e) {
-    validarNombre (e);
-    validarTelefono (e);
-    validarEmail (e);
-    validarComentario (e);
+const validar = function () {
+    const resultadoNombre = validarNombre ();
+    const resultadoPrimer = validarPrimerApellido ();
+    const resultadoSegundo = validarSegundoApeliido ();
+    const resultadoTelefono = validarTelefono ();
+    const resultadoEmail = validarEmail ();
+    const resultadoComentario = validarComentario ();
 };
 
-formulario.addEventListener ("submit",validar);
+formulario.addEventListener ("submit",function(e) {
+    e.preventDefault();
+    validar();
+});
 
 }())
