@@ -40,16 +40,16 @@ productsHome.forEach((prod) => {
 
 const aliadoNegocio = [{
     imgAli:"../resources/main/aliado_ccs.png",
-    nameAli: "Caracas"
+    cityAli: "Caracas"
 }, {
     imgAli:"../resources/main/aliado_cdbolivar.jpg",
-    nameAli:"Ciudad Bolivar"
-}. {
+    cityAli:"Ciudad Bolivar"
+}, {
     imgAli:"../resources/main/aliado_miranda.png",
-    nameAli:"Miranda"
+    cityAli:"Miranda"
 }, {
     imgAli:"../resources/main/aliado_lara.jpg",
-    nameAli: "Lara"
+    cityAli: "Lara"
 }];
 
 aliadoNegocio.forEach((aliado) => {
@@ -63,5 +63,4 @@ aliadoNegocio.forEach((aliado) => {
     ulAli.appendChild(listAliado);
 
     listAliado.appendChild(imgAliado);
-
 });

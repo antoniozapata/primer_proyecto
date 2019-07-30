@@ -14,7 +14,7 @@ const validarNombre = function (e) {
 const validarTelefono = function (e) {
     if (/^([9,7,6]{1})+([0-9]{8})$/ == true) {
         validp.innerText = "válido"
-        else {
+    } else {
         valido.innerText = "incorrecto";
         alert ("Completa el campo Telefono");
         e.preventDefault();
@@ -46,4 +46,4 @@ const validar = function (e) {
 
 formulario.addEventListener ("submit",validar);
 
-}())
+}());
