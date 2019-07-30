@@ -44,7 +44,7 @@ const aliadoNegocio = [{
 }, {
     imgAli:"../resources/main/aliado_cdbolivar.jpg",
     nameAli:"Ciudad Bolivar"
-}. {
+}, {
     imgAli:"../resources/main/aliado_miranda.png",
     nameAli:"Miranda"
 }, {
