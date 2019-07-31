@@ -36,17 +36,54 @@ const validar = function () {
     const resultadoEmail = validarEmail ();
     const resultadoComentario = validarComentario ();
 
+    const camposFaltantes = document.createElement("div");
+
     if (resultadoNombre === false) {
-        const camposFaltantes = document.createElement("div");
         const campoMensaje = document.createElement("p");
         campoMensaje.setAttribute("class", "container-mensaje");
-
-        const mainSection = document.querySelector(".container-form");
-        mainSection.appendChild(camposFaltantes);
-
+        campoMensaje.append("Complete el campo nombre");
+        campoMensaje.classList.add("container-mensaje");
         camposFaltantes.appendChild(campoMensaje);
-        campoMensaje.innerHTML = "Complete el campo Nombre";        
+    } 
+    
+    if (resultadoPrimer === false) {
+        const campoMensaje = document.createElement("p");
+        campoMensaje.append("Complete el campo Primer Apellido");
+        campoMensaje.classList.add("container-mensaje");
+        camposFaltantes.appendChild(campoMensaje);
     }
+    
+    if (resultadoSegundo === false) {
+        const campoMensaje = document.createElement("p");
+        campoMensaje.append("Complete el campo Segundo Apellido");
+        campoMensaje.classList.add("container-mensaje");
+        camposFaltantes.appendChild(campoMensaje);
+    }
+    
+    if (resultadoTelefono === false) {
+        const campoMensaje = document.createElement("p");
+        campoMensaje.append("Complete el campo Telefono");
+        campoMensaje.classList.add("container-mensaje");
+        camposFaltantes.appendChild(campoMensaje);
+    }
+        
+    if (resultadoEmail === false) {
+        const campoMensaje = document.createElement("p");
+        campoMensaje.append("Complete el campo email");
+        campoMensaje.classList.add("container-mensaje");
+        camposFaltantes.appendChild(campoMensaje);
+    }
+
+    if (resultadoComentario === false) {
+        const campoMensaje = document.createElement("p");
+        campoMensaje.append("Complete el campo comentario");
+        campoMensaje.classList.add("container-mensaje");
+        camposFaltantes.appendChild(campoMensaje);
+    }
+
+    const mainSection = document.querySelector(".container-form");
+    mainSection.appendChild(camposFaltantes);
+    
 };
 
 formulario.addEventListener ("submit",function(e) {
