@@ -57,3 +57,6 @@ aliadoNegocio.forEach((aliado) => {
 
     listAliado.appendChild(imgAliado);
 });
+
+const element = document.querySelector('.header');
+element.style.setProperty("--primary-color", "pink");

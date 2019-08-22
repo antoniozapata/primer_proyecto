@@ -18,7 +18,7 @@
     height: 4.6rem;
     min-height: 4.6rem;
     min-width: 840px;
-    background: linear-gradient(to left, #4e94ab, #4e94ab 40%, white);
+    background: var(--primary-color);
     font-family: 'Roboto', sans-serif;
 }
 
